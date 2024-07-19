@@ -1,9 +1,9 @@
 # Exemplo de Paginação
 # Guia
-1. Sobre
-2. Como Executar o Projeto
-3. Tecnologias
-4. Ilustração
+1. [Sobre](https://github.com/IanoMaciel/exemple-paginate/edit/master/README.md#1-sobre)
+2. [Como Executar o Projeto](https://github.com/IanoMaciel/exemple-paginate/edit/master/README.md#2-como-executar-o-projeto)
+3. [Tecnologias](https://github.com/IanoMaciel/exemple-paginate/edit/master/README.md#3-tecnologias)
+4. [Ilustração](https://github.com/IanoMaciel/exemple-paginate/edit/master/README.md#4-ilustra%C3%A7%C3%A3o)
 
 # 1. Sobre
 Olá, Dev! Este projeto é um exemplo de paginação desenvolvido em React. O foco principal é a implementação da funcionalidade de paginação, que foi integrada a uma API de listagem de produtos.
