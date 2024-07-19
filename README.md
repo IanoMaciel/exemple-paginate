@@ -5,10 +5,10 @@
 3. Tecnologias
 4. Ilustração
 
-# Sobre
+# 1. Sobre
 Olá, Dev! Este projeto é um exemplo de paginação desenvolvido em React. O foco principal é a implementação da funcionalidade de paginação, que foi integrada a uma API de listagem de produtos.
 
-# Como Executar o Projeto
+# 2. Como Executar o Projeto
 ## Clone este repositório
 
 ```bash
@@ -90,6 +90,14 @@ const api = axios.create({
 export default api;
 ```
 
-# Ilustração
+# 3. Tecnologias
+
+| Tecnologia         | Descrição                                                               |
+|--------------------|-------------------------------------------------------------------------|
+| React e TypeScript | **React** é uma biblioteca JavaScript para construção de interfaces de usuário dinâmicas e interativas, enquanto **TypeScript** é um superset do JavaScript que adiciona tipagem estática e outras funcionalidades avançadas ao código. Juntos, eles oferecem uma abordagem robusta e escalável para o desenvolvimento frontend. |
+| Styled-Components | biblioteca que permite escrever estilos CSS dentro dos componentes JavaScript, promovendo uma abordagem modular e reutilizável para o design de interfaces. |
+| Axios              | é uma biblioteca para realizar requisições HTTP, que simplifica o consumo de APIs e a manipulação de dados em aplicações web, oferecendo suporte a promessas e interceptores para um gerenciamento mais eficiente das requisições. |
+
+# 4. Ilustração
 
 ![alt text](image.png)
