@@ -21,7 +21,7 @@ git clone https://github.com/IanoMaciel/exemple-paginate.git
 # 1. entre no diretório do projeto
 cd exemple-paginate 
 
-# 2. instale as depedências do projeto
+# 2. instale as dependências do projeto
 yarn install #ou npm install
 
 # 3. por fim, execute o projeto.
