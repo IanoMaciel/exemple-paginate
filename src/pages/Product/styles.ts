@@ -8,18 +8,22 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 
-  padding: 0 100px;;
+  padding: 0 100px;
 `;
 
-export const Header = styled.section`
+export const Title = styled.div`
+   width: 100%;
+`;
+
+export const Paginate = styled.section`
    width: 100%;
 
    display: flex;
    align-items: center;
    justify-content: space-between
    ;
-   margin-bottom: 20px;
 `;
 
 export const PerPage = styled.div`
@@ -63,8 +67,11 @@ export const Table = styled.table`
     text-align: left;
   }
 
+  th {
+   background-color: #f2f2f2;
+  }
+
   th, td {
-    background-color: #f2f2f2;
     text-align: center; /* Alinha todas as colunas à esquerda */
   }
 `;

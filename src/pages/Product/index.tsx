@@ -26,7 +26,7 @@ interface IPagination {
    total: number;
 }
 
-export default function Service() {
+export default function Product() {
    const [products, setProducts] = useState<IProduct[]>([]);
 
    // paginate 
@@ -60,11 +60,15 @@ export default function Service() {
 
    return (
       <S.Container>
-         <S.Header>
+         <S.Title>
+            <h1>Listagem de Produtos</h1>
+         </S.Title>
+      
+         <S.Paginate>
             <S.PerPage>
                <label htmlFor="itemsPerPage">Exibindo registro por página:</label>
                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange}>
-                  <option value={15}>15</option>
+                  <option value={10}>10</option>
                   <option value={25}>25</option>
                   <option value={50}>50</option>
                </select>
@@ -84,7 +88,7 @@ export default function Service() {
                   </button>
                </S.Page>
             )}
-         </S.Header>
+         </S.Paginate>
 
          <S.ContentData>
             <S.Table>
