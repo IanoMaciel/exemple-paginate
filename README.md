@@ -97,6 +97,7 @@ export default api;
 | React e TypeScript | **React** é uma biblioteca JavaScript para construção de interfaces de usuário dinâmicas e interativas, enquanto **TypeScript** é um superset do JavaScript que adiciona tipagem estática e outras funcionalidades avançadas ao código. Juntos, eles oferecem uma abordagem robusta e escalável para o desenvolvimento frontend. |
 | Styled-Components | biblioteca que permite escrever estilos CSS dentro dos componentes JavaScript, promovendo uma abordagem modular e reutilizável para o design de interfaces. |
 | Axios              | é uma biblioteca para realizar requisições HTTP, que simplifica o consumo de APIs e a manipulação de dados em aplicações web, oferecendo suporte a promessas e interceptores para um gerenciamento mais eficiente das requisições. |
+| ReactToPrint | biblioteca responsável para imprimir o conteúdo de um componente React |
 
 # 4. Ilustração
 
