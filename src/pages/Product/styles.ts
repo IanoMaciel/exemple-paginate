@@ -11,10 +11,28 @@ export const Container = styled.section`
   gap: 20px;
 
   padding: 0 100px;
+
+   @media print {
+      height: auto;
+      padding: 10px 50px;
+   }
 `;
 
 export const Title = styled.div`
    width: 100%;
+   display: flex;
+   align-items: center;
+
+   gap: 10px;
+
+   button {
+      padding: 5px 10px;
+      border-radius: 4px;
+   }
+   
+   @media print {
+      text-align: left;
+   }
 `;
 
 export const Paginate = styled.section`
@@ -22,8 +40,11 @@ export const Paginate = styled.section`
 
    display: flex;
    align-items: center;
-   justify-content: space-between
-   ;
+   justify-content: space-between;
+
+   /* @media print {
+      display: none; /* Esconder a paginação na impressão */
+   } */
 `;
 
 export const PerPage = styled.div`
@@ -35,6 +56,10 @@ export const PerPage = styled.div`
    display: flex;
    align-items: center;
    gap: 10px;
+
+   /* @media print {
+    display: none; /* Esconder a seleção de itens por página na impressão */
+  } */
 `;
 
 export const Page = styled.div`
@@ -45,6 +70,10 @@ export const Page = styled.div`
    padding: 5px 10px;
    border-radius: 4px;
   }
+
+  /* @media print {
+    display: none; /* Esconder os botões de navegação na impressão */
+  } */
 `;
 
 export const ContentData = styled.section`
@@ -53,6 +82,11 @@ export const ContentData = styled.section`
 
    border-collapse: collapse;
    overflow: auto; /* Adiciona scroll quando necessário */
+
+   @media print {
+    height: auto; /* Ajusta a altura para caber na página impressa */
+    overflow: visible; /* Remove o scroll na impressão */
+  }
 `;
 
 
@@ -74,6 +108,14 @@ export const Table = styled.table`
   th, td {
     text-align: center; /* Alinha todas as colunas à esquerda */
   }
+
+  @media print {
+    th {
+      //background-color: #fff; /* Remove o fundo colorido para impressão */
+      -webkit-print-color-adjust: exact;
+    }
+   }
+
 `;
 
 export const Data = styled.div`
@@ -81,4 +123,9 @@ export const Data = styled.div`
   /* justify-content: center; */
   align-items: center;
   gap: 50px;
+
+  @media print {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;

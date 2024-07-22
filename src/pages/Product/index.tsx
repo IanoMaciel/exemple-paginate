@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import api from '../../api/axios';
 
 import * as S from './styles';
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import { useReactToPrint } from 'react-to-print';
 
 interface IProduct {
    id: number;
@@ -58,10 +59,17 @@ export default function Product() {
       setCurrentPage(1); // Reset to the first page when items per page changes
    };
 
+   // react-to-print
+   const contentRef = useRef<HTMLDivElement>(null);
+   const handlePrint = useReactToPrint({ 
+      content: () => contentRef.current,
+    });
+
    return (
-      <S.Container>
+      <S.Container id="printable-content" ref={contentRef}>
          <S.Title>
             <h1>Listagem de Produtos</h1>
+            <button onClick={handlePrint}>Imprimir</button>
          </S.Title>
       
          <S.Paginate>
